@@ -31,11 +31,13 @@ function content() {
         type: 4,
         content: ['内容', '#content']
     });
-// skin - 样式类名
-
-// skin - 样式类名
-// skin - 样式类名
-// skin - 样式类名
-// skin - 样式类名
-// skin - 样式类名
 }
+
+$(function () {
+    $('#text').blur(function () {
+        layer.tips('我是一个小提示', '#text', {
+            tips: [1, '#3595CC'],
+            time: 4000
+        });
+    });
+});
